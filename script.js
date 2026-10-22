@@ -15,3 +15,31 @@ if (menuToggle && nav) {
     });
   });
 }
+// ==================================
+// EXPANDABLE EVENING PLAN
+// ==================================
+
+const planningToggle = document.querySelector("#planning-toggle");
+const planningContent = document.querySelector("#planning-content");
+
+if (planningToggle && planningContent) {
+
+  planningToggle.addEventListener("click", () => {
+
+    const isExpanded =
+      planningToggle.getAttribute("aria-expanded") === "true";
+
+    planningToggle.setAttribute(
+      "aria-expanded",
+      String(!isExpanded)
+    );
+
+    planningContent.hidden = isExpanded;
+
+    planningToggle.innerHTML = isExpanded
+      ? 'View the evening\'s plan <span aria-hidden="true">↗</span>'
+      : 'Close the plan <span aria-hidden="true">↑</span>';
+
+  });
+
+}
