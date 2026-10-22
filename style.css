@@ -100,3 +100,195 @@ h2{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.
  .shoot-video-grid{grid-template-columns:1fr 1fr;gap:22px 12px}.video-card:last-child{grid-column:1/-1;width:calc(50% - 6px)}.shoot-photo-grid{gap:9px}
  .next-steps{grid-template-columns:1fr;gap:10px;margin:35px auto}.next-steps div{padding:15px}.footer{padding:24px 6vw;display:block}.footer a{display:inline-block;margin-top:15px}
 }
+/* ==================================
+   REFINED COVER TITLE
+================================== */
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  max-width: 700px;
+  margin: 0 auto 1.2rem;
+}
+
+.hero h1 em {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0.12em;
+}
+
+.hero .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-intro {
+  max-width: 440px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.hero-date {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 9vw, 3.3rem);
+    line-height: 1.12;
+  }
+
+  .hero-intro {
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+
+}
+
+
+/* ==================================
+   CONFETTI VIDEO
+================================== */
+
+.confetti-section {
+  text-align: center;
+}
+
+.confetti-intro {
+  max-width: 540px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.confetti-video {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #e9e5df;
+}
+
+.confetti-video video {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.confetti-section .caption {
+  margin-top: 0.8rem;
+  font-size: 0.78rem;
+  opacity: 0.7;
+}
+
+
+/* ==================================
+   PLANNING SECTION
+================================== */
+
+.planning-section {
+  text-align: center;
+}
+
+.planning-intro {
+  max-width: 540px;
+  margin: 0 auto 1.8rem;
+  line-height: 1.8;
+}
+
+.planning-toggle {
+  cursor: pointer;
+  font: inherit;
+  margin: 0 auto;
+}
+
+.planning-toggle span {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.planning-content {
+  max-width: 760px;
+  margin: 3rem auto 0;
+  text-align: left;
+}
+
+.planning-content[hidden] {
+  display: none;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 1.2rem;
+  padding: 1.7rem 0;
+  border-top: 1px solid rgba(40, 40, 40, 0.14);
+}
+
+.timeline-number {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding-top: 0.25rem;
+}
+
+.timeline-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  opacity: 0.7;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 0.65rem;
+}
+
+.timeline-item p:not(.timeline-label) {
+  font-size: 0.94rem;
+  line-height: 1.8;
+  margin: 0 0 0.7rem;
+}
+
+.after-sunset-moment {
+  padding: 2rem 1.3rem;
+  background: rgba(35, 31, 28, 0.045);
+  border-radius: 12px;
+}
+
+.planning-footnote {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  opacity: 0.7;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+
+  .timeline-item {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-item p:not(.timeline-label) {
+    font-size: 0.88rem;
+  }
+
+  .after-sunset-moment {
+    padding: 1.3rem 0.9rem;
+  }
+
+}
