@@ -327,3 +327,28 @@ h2{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.
     height: 100svh;
   }
 }
+/* FINAL FIX: Full-screen confetti video */
+.confetti-section,
+.confetti-section .confetti-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.confetti-video {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
+}
